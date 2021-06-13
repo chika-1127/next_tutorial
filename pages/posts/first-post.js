@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import Head from "next/head";
+import Layout from "../../components/layout";
 
 export default function FirstPost() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
       </Head>
@@ -15,6 +16,6 @@ export default function FirstPost() {
         </Link>
       </h2>
       <Image src="/images/profile.png" height={455} width={690} alt="Pikachu" />
-    </>
+    </Layout>
   );
 }
